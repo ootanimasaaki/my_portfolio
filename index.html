@@ -1,0 +1,343 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>大谷のポートフォリオ</title>
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="description" content="大谷が制作したポートフォリオです。">
+<meta name="Keywords" content="ootani,大谷,おおたに,オオタニ">
+<meta name="copyright" content="ootani">
+<link rel="icon" href="assets/images/favicon.ico">
+
+<!--↓このページのキャッシュを拒否することができる-->
+<meta name="robots" content="index,nofollow">
+
+<!-- Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="『大谷のポートフォリオ』サイト">
+<meta property="og:image" content="http://oomasamasa.html.xdomain.jp/images/sns/ogp.jpg">
+<meta property="og:url" content="http://oomasamasa.html.xdomain.jp/">
+<meta property="og:site_name" content="『大谷のポートフォリオ』サイト">
+<meta property="og:description" content="大谷が制作したポートフォリオです。">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="『大谷のポートフォリオ』サイト">
+<meta name="twitter:image" content="http://oomasamasa.html.xdomain.jp/images/sns/ogp.jpg">
+<meta name="twitter:url" content="http://oomasamasa.html.xdomain.jp/">
+<meta name="twitter:description" content="大谷が制作したポートフォリオです。">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+<link rel="stylesheet" href="assets/css/animate.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/shine.css">
+<link rel="stylesheet" href="assets/css/common.css?ver=2" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+<script src="assets/js/wow.min.js"></script> 
+<script src="assets/js/common.js"></script><!--メニュー--> 
+<script src="assets/js/top.js"></script> 
+<script>
+	new WOW().init();
+</script> 
+<script>
+$(window).load(function() {
+  $("body").removeClass("preload");
+});
+</script> 
+
+<!-- スムーズスクロール部分の記述 --> 
+<script>
+$(function(){
+   // #で始まるアンカーをクリックした場合に処理
+   $('a[href^=#]').click(function() {
+      // スクロールの速度
+      var speed = 400; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を数値で取得
+      var position = target.offset().top;
+      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>
+</head>
+
+<body id="wrap" class="preload">
+<div id="wrapper"> 
+  
+  <!--============================
+	         MENU
+	=============================-->
+  <header>
+    <div id="menuArea">
+      <nav class="menu-wrap-lg">
+        <ul class="menu">
+          <li> <a href="#top" class="line01">TOP</a> </li>
+          <li> <a href="#web" class="line01">WEB</a> </li>
+          <li> <a href="#lineStamp" class="line01">LINEスタンプ</a> </li>
+          <li> <a href="#game" class="line02">カジュアル<br>
+            ゲーム</a> </li>
+          <li> <a href="#other" class="line01">その他</a> </li>
+        </ul>
+      </nav>
+      <div id="menuIcon"> <a href="javascript:void(0);"> 
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="Toggle"> <span></span> <span></span> <span></span> </div>
+        <div id="text_menu">MENU</div>
+        </a> </div>
+      <ul id="menuWaku">
+        <li id="menu1" class="menu"> <a href="#top">TOP</a> </li>
+        <li id="menu2" class="menu"> <a href="#web">WEB</a> </li>
+        <li id="menu3" class="menu"> <a href="#lineStamp">LINEスタンプ</a> </li>
+        <li id="menu4" class="menu"> <a href="#game">カジュアルゲーム</a> </li>
+        <li id="menu5" class="menu"> <a href="#other">その他</a> </li>
+      </ul>
+    </div >
+  </header>
+  
+  <!----+++ main visual +++---->
+  <main>
+    <section id="top" class="mainArea01">
+      <div class="animated zoomInDown" id="anidelay01" data-wow-delay="0.6s"> <img src="assets/images/ch_01_1.png" alt="キャラクター画像1"> </div>
+      <h1 class="animated zoomInDown" id="anidelay02" data-wow-delay="0.8s">ようこそ！</h1>
+      <h2 class="wow zoomInDown " data-wow-delay="1.0s">大谷のポートフォリオへ！<br>
+        よろしくお願いします。</h2>
+    </section>
+    <section id="web" class="mainArea02">
+      <div class="wow bounceInDown handPoint" data-wow-offset="150"> <img src="assets/images/ch_02.png" alt="キャラクター画像2"> </div>
+      <h1 class="wow bounceInLeft facePoint" data-wow-delay="0.2s" data-wow-offset="0">ここは<br>
+        Webだよ!</h1>
+      <h2 class="wow bounceInLeft " data-wow-delay="0.4s" data-wow-offset="0">今まで携わったサイトです。<br>
+        画像をクリックしてください。</h2>
+      <div class="row">
+        <div class="col col-md-half">
+          <div class="wow bounceInLeft" data-wow-delay="0.8s" data-wow-offset="0">
+            <div class="balloon2">
+              <p>マイ大阪ガス</p>
+              <div class="grid-list-item"><a href="https://www.osakagas.co.jp/ssl/my-page/index.html" target="_blank"><img src="assets/images/web001.png" alt="マイ大阪ガス" style="width:100%;height:auto;" ></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-half">
+          <div class="wow bounceInLeft" data-wow-delay="0.6s" data-wow-offset="0">
+            <div class="balloon2">
+              <p>株式会社サンアイ</p>
+              <div class="grid-list-item"><a href="http://www.3ai-osaka.com/" target="_blank"><img  src="assets/images/web002.png" alt="五色建設株株式会社の画像"></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-half">
+          <div class="wow bounceInLeft" data-wow-delay="0.6s" data-wow-offset="0">
+            <div class="balloon2">
+              <p>五色建設株式会社</p>
+              <div class="grid-list-item"><a href="https://www.goshiki-kk.com/" target="_blank"><img  src="assets/images/web003.png" alt="五色建設株株式会社の画像"></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-half">
+          <div class="wow bounceInLeft" data-wow-delay="0.6s" data-wow-offset="0">
+            <div class="balloon2">
+              <p>株式会社ダイエイホーム</p>
+              <div class="grid-list-item"><a href="http://www.daieihome.com/bunjouchi/index.html" target="_blank"><img  src="assets/images/web004.png" alt="株式会社ダイエイホームの画像"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="padding-bottom:100px;">
+        <div class="col col-md-half">
+          <div class="wow bounceInLeft" data-wow-delay="0.8s" data-wow-offset="0">
+            <div class="balloon2">
+              <p>マツダホーム株式会社</p>
+              <div class="grid-list-item"> <a href="https://www.matsudahome.co.jp/?gclid=Cj0KCQjw0IDtBRC6ARIsAIA5gWusOPLXxFQcED6PrnsacblaAuxIo9QzQmD62aayjcotHiGetcjkj8IaAlHJEALw_wcB" target="_blank"><img src="assets/images/web005.png" alt="マツダホーム株式会社"></a> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-half">
+          <div class="wow bounceInLeft" data-wow-delay="0.6s" data-wow-offset="0">
+            <div class="balloon2">
+              <p>フジツウ住宅販売株式会社</p>
+              <div class="grid-list-item"><a href="https://www.fujitsu-home.com/mortgage/" target="_blank"><img  src="assets/images/web006.png" alt="フジツウ住宅販売株式会社"></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-half">
+          <div class="wow bounceInLeft" data-wow-delay="0.6s" data-wow-offset="0">
+            <div class="balloon2">
+              <p>有限会社アルファホーム</p>
+              <div class="grid-list-item"><a href="https://www.alphahome.co.jp/company/index.html" target="_blank"><img  src="assets/images/web007.png" alt="有限会社アルファホームの画像"></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-half">
+          <div class="wow bounceInLeft" data-wow-delay="0.6s" data-wow-offset="0">
+            <div class="balloon2">
+              <p>チボリゴルフスクール</p>
+              <div class="grid-list-item"><a href="https://k-kmg.jp/school/" target="_blank"><img  src="assets/images/web008.png" alt="チボリゴルフスクールの画像"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="lineStamp" class="mainArea01">
+      <div class="wow bounceInDown" data-wow-offset="150"> <img src="assets/images/ch_01_2.png" alt="キャラクター画像1" class="img_height"> </div>
+      <h1 class="wow bounceInLeft" data-wow-delay="0.2s" data-wow-offset="0">ここは<br>
+        LINE<br class="sp">
+        スタンプ<br class="sp">
+        だよ!</h1>
+      <h2 class="wow bounceInLeft" data-wow-delay="0.4s" data-wow-offset="0">画像をクリックしてください。</h2>
+      <div class="row">
+        <div class="col col-md-half02">
+          <div class="wow bounceInLeft" data-wow-delay="0.8s" data-wow-offset="0">
+            <div class="balloon1">
+              <p>ジャポネおおたには<br>
+                ネコっぽい…</p>
+              <div class="grid-list-item"><a href="https://line.me/S/sticker/12105541" target="_blank"><img src="assets/images/jpo.png" alt="ジャポネおおたにはネコっぽいの画像"></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-half02">
+          <div class="wow bounceInLeft" data-wow-delay="0.6s" data-wow-offset="0">
+            <div class="balloon1">
+              <p>大阪のお母んやん</p>
+              <div class="grid-list-item"><a href="https://store.line.me/stickershop/product/13074305" target="_blank"><img  src="assets/images/db.png" alt="大阪のお母んやんの画像"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="game" class="mainArea02 game_mt">
+      <div class="wow bounceInDown handPoint03" data-wow-offset="150"> <img  src="assets/images/ch_02.png" alt="キャラクター画像2" class="img_height"> </div>
+      <h1 class="wow bounceInLeft facePoint04" data-wow-delay="0.2s" data-wow-offset="0">ここは<br>
+        カジュアル<br class="sp">
+        ゲーム<br class="sp">
+        だよ!</h1>
+      <h2 class="wow bounceInLeft " data-wow-delay="0.4s" data-wow-offset="0">画像をクリックしてください。</h2>
+      <div class="row" style="padding-bottom:100px; ">
+        <div class="col col-md-half02">
+          <div class="wow bounceInLeft" data-wow-delay="0.8s" data-wow-offset="0">
+            <div class="balloon2">
+              <p>アドベンチャー・オブ<br>
+                ルル</p>
+              <div class="grid-list-item"> <a href="https://play.google.com/store/apps/details?id=com.nyankero" target="_blank"><img  src="assets/images/aor.png" alt="アドベンチャーオブルル画像"></a> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-half02">
+          <div class="wow bounceInLeft" data-wow-delay="0.6s" data-wow-offset="0">
+            <div class="balloon2">
+              <p>ダンスまにあ</p>
+              <div class="grid-list-item"> <a href="dance.html" target="_blank"><img  src="assets/images/dance.png" alt="ダンスまにあの画像"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="other" class="mainArea01">
+      <div class="wow bounceInDown" data-wow-offset="150"> <img src="assets/images/ch_01_3.png" alt="キャラクター画像3" class="img_height"> </div>
+      <h1 class="wow bounceInLeft" data-wow-delay="0.2s" data-wow-offset="0">ここは<br>
+        その他だよ!</h1>
+      <h2 class="wow bounceInLeft " data-wow-delay="0.4s" data-wow-offset="0" style="margin-top: 30px;">☆シネマグラフ☆</h2>
+      
+      <!--シネマグラフ-->
+      <div class="row">
+        <div class="col col-md-half">
+          <div class="wow bounceInLeft" data-wow-delay="0.8s" data-wow-offset="0">
+            <div class="balloon1">
+              <p>シネマグラフ01</p>
+              <div class="grid-list-item"> <a href="assets/images/001.gif" data-rel="lightcase:Cinemagraphs" title="シネマグラフ01"><img src="assets/images/cinema01.png"  alt="シネマグラフ01"/></a> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-half">
+          <div class="wow bounceInLeft" data-wow-delay="0.6s" data-wow-offset="0">
+            <div class="balloon1">
+              <p>シネマグラフ02</p>
+              <div class="grid-list-item"> <a href="assets/images/002.gif" data-rel="lightcase:Cinemagraphs" title="シネマグラフ02"><img src="assets/images/cinema02.png"  alt="シネマグラフ02"/></a> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-half">
+          <div class="wow bounceInLeft" data-wow-delay="0.8s" data-wow-offset="0">
+            <div class="balloon1">
+              <p>シネマグラフ03</p>
+              <div class="grid-list-item"> <a href="assets/images/003.gif" data-rel="lightcase:Cinemagraphs" title="シネマグラフ03"><img src="assets/images/cinema03.png"  alt="シネマグラフ03"/></a> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-half">
+          <div class="wow bounceInLeft" data-wow-delay="0.6s" data-wow-offset="0">
+            <div class="balloon1">
+              <p>シネマグラフ04</p>
+              <div class="grid-list-item"> <a href="assets/images/004.gif" data-rel="lightcase:Cinemagraphs" title="シネマグラフ04"><img src="assets/images/cinema04.png"  alt="シネマグラフ04"/></a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--タイムラプス-->
+      
+      <div class="row" style="text-align: center;">
+        <h2 class="wow bounceInLeft " data-wow-delay="0.4s" data-wow-offset="0" style="margin-top: 80px;">☆タイムラプス☆</h2>
+        <div class="col col-md-half02">
+          <div class="wow bounceInLeft" data-wow-delay="0.8s" data-wow-offset="0">
+            <div class="balloon1">
+              <p>タイムラプス動画01</p>
+              <div class="grid-list-item"> <a data-rel="lightcase" href="https://www.youtube.com/embed/3eZqMv5b4UU?rel=0&controls=0&showinfo=0"><img src="assets/images/timer01.png" alt="タイムラプス動画01"></a> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-half02">
+          <div class="wow bounceInLeft" data-wow-delay="0.6s" data-wow-offset="0">
+            <div class="balloon1">
+              <p>タイムラプス動画02</p>
+              <div class="grid-list-item"> <a data-rel="lightcase" href="https://www.youtube.com/embed/zVnPZNdkAKI?rel=0&controls=0&showinfo=0"><img src="assets/images/timer02.png" alt="タイムラプス動画02"></a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wow bounceInDown handPoint03" data-wow-offset="150"> <img  src="assets/images/ch_02.png" alt="キャラクター画像2" class="img_height"> </div>
+      <p style="padding-bottom:15vh "></p>
+    </section>
+    
+    <!--============================
+	         ページトップへbutton
+	=============================-->
+    <div>
+      <p id="page-top"> <a href="#wrap"><img src="assets/images/btn_pagetop.png" alt="PAGE TOP"></a> </p>
+    </div>
+    <div id="main-bg">
+      <video loop muted playsinline id="main-video-pc" preload="none" class="pc">
+        <source src="assets/video/loop.mp4" type="video/mp4">
+      </video>
+      <video loop muted autoplay playsinline id="main-video-sp" preload="none" class="sp">
+        <source src="assets/video/loop_sp.mp4" type="video/mp4">
+      </video>
+    </div>
+  </main>
+</div>
+<!-----------------------------------------------------------------------------------------
+ other scripts
+-----------------------------------------------------------------------------------------> 
+
+<!--<script src="assets/js/infiniteslidev2.min.js"></script>--> 
+<!--<script src="//api.html5media.info/1.2.2/html5media.min.js"></script>--> 
+<!--<script type="text/javascript">
+document.write('<scr'+'ipt type="text/javascript" src="assets/js/ScrollMagic.min.js"></scr'+'ipt>');
+</script>--> 
+
+<!--<script src="assets/js/plugins/animation.gsap.js"></script>--> 
+
+<script>
+var video=document.getElementById("main-video-pc");
+video.play();
+//video = $('#main-video')[0];
+//video.pause();
+</script>
+	
+</body>
+</html>

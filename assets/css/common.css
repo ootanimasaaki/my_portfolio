@@ -1,0 +1,659 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Oswald:700');
+@font-face {
+  font-family: 'bebasregular';
+  src: url('../fonts/bebas-regular-webfont.eot');
+  src: url('../fonts/bebas-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/bebas-regular-webfont.woff2') format('woff2'), url('../fonts/bebas-regular-webfont.woff') format('woff'), url('../fonts/bebas-regular-webfont.ttf') format('truetype'), url('../fonts/bebas-regular-webfont.svg#bebasregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  width: 100%;
+  /*height: 100%;
+	transform-origin: 50%;*/
+}
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  line-height: 1;
+  font-family: 'Work Sans', sans-serif;
+  background: #000;
+  font-size: 14px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  /*background:#000;*/
+  /*min-height:667px;*/
+}
+figure, p, ul, li, img {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  pointer-events: none;
+  vertical-align: top;
+}
+/**/
+body.preload .wow.bounceInLeft {
+  opacity: 0 !important;
+}
+body.preload .wow.fadeInUp {
+  opacity: 0 !important;
+}
+body.preload .wow.fadeInUpBig {
+  opacity: 0 !important;
+}
+body.preload .wow.fadeInLeft {
+  opacity: 0 !important;
+}
+body.preload .wow.fadeInLeftBig {
+  opacity: 0 !important;
+}
+body.preload .wow.zoomInDown {
+  opacity: 0 !important;
+}
+body.preload .wow.bounceInDown {
+  opacity: 0 !important;
+}
+#anidelay01 {
+  animation-delay: 0.6s;
+}
+#anidelay02 {
+  animation-delay: 0.8s;
+}
+/*---------------------------------------------------------------------------------------
+　header
+---------------------------------------------------------------------------------------*/
+/*メニュー*/
+/*PCナビゲーションアニメ*/
+header .menu li:nth-child(1) {
+  animation-delay: 0.0s;
+  /*padding-top: 8px;*/
+}
+header .menu li:nth-child(2) {
+  animation-delay: 0.15s;
+  /*padding-top: 8px;*/
+}
+header .menu li:nth-child(3) {
+  animation-delay: 0.30s;
+}
+header .menu li:nth-child(4) {
+  animation-delay: 0.45s;
+}
+header .menu li:nth-child(5) {
+  animation-delay: 0.60s;
+}
+/*SPナビゲーションアニメ*/
+header #menuWaku li:nth-child(1) {
+  animation-delay: 0.0s;
+  /*padding-top: 8px;*/
+}
+header #menuWaku li:nth-child(2) {
+  animation-delay: 0.15s;
+  /*padding-top: 8px;*/
+}
+header #menuWaku li:nth-child(3) {
+  animation-delay: 0.30s;
+}
+header #menuWaku li:nth-child(4) {
+  animation-delay: 0.45s;
+}
+header #menuWaku li:nth-child(5) {
+  animation-delay: 0.60s;
+}
+ul li {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 0.3s; /* アニメーションの長さ */
+  animation-fill-mode: forwards; /* アニメーション終了時のスタイルをアニメーション終了後でも適用させる */
+}
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  30% {
+    transform: translateY(0px);
+    opacity: 100;
+  }
+  70% {
+    transform: translateY(-3px);
+    opacity: 100;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 100;
+  }
+}
+/*メニュー*/
+.menu-wrap-lg {
+  display: none;
+}
+#menuArea {
+  width: 100%;
+  max-width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 5;
+}
+#menuIcon {
+  position: relative;
+  height: 54px;
+  background: #FFFFFF;
+}
+#menuIcon #text_menu {
+  font-weight: 550;
+  color: black;
+  font-size: 40px;
+  position: absolute;
+  top: -3px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto; /*上下左右中央に*/
+  width: 100%;
+  height: 80%;
+}
+#menuIcon a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+#menuWaku {
+  display: none;
+  width: 100%;
+  top: 0px;
+  background: url("../images/menu_back.png")repeat;
+  position: static;
+  border-bottom: #10506C 1px dotted;
+  box-sizing: border-box;
+}
+#menuWaku a {
+  vertical-align: middle;
+}
+.menu {
+  font-size: 30px;
+  padding-top: 5px;
+  height: 50px;
+}
+/*トグルボタンのスタイルを指定*/
+.Toggle {
+  display: block;
+  position: fixed; /* bodyに対しての絶対位置指定 */
+  top: 12px;
+  /*margin-left: -50px;*/
+  width: 36px;
+  height: 42px;
+  cursor: pointer;
+  z-index: 3;
+}
+.Toggle span {
+  display: block;
+  position: absolute;
+  width: 36px;
+  border-bottom: solid 6px #000;
+  -webkit-transition: .35s ease-in-out; /*変化の速度を指定*/
+  -moz-transition: .35s ease-in-out; /*変化の速度を指定*/
+  transition: .35s ease-in-out; /*変化の速度を指定*/
+  left: 6px;
+}
+.Toggle span:nth-child(1) {
+  top: 0px;
+}
+.Toggle span:nth-child(2) {
+  top: 12px;
+}
+.Toggle span:nth-child(3) {
+  top: 24px;
+}
+/* 最初のspanをマイナス45度に */
+.Toggle.active span:nth-child(1) {
+  top: 12px;
+  left: 6px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* 2番目と3番目のspanを45度に */
+.Toggle.active span:nth-child(2), .Toggle.active span:nth-child(3) {
+  top: 12px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+ul, ol {
+  list-style-type: none;
+}
+#menuWaku .menu {
+  border-bottom: #10506C 1px dotted;
+  box-sizing: border-box;
+  text-align: center;
+}
+li {
+  list-style-type: none;
+}
+li a {
+  display: block;
+  color: white;
+}
+a {
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: color .25s ease;
+  -moz-transition: color .25s ease;
+  -o-transition: color .25s ease;
+  transition: color .25s ease;
+}
+a:hover {
+  color: #fff;
+}
+#wrap {
+  overflow-x: hidden;
+}
+/*---------------------------------------------------------------------------------------
+　common 
+---------------------------------------------------------------------------------------*/
+#wrapper {
+  /*max-width:1070px;*/
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  /*overflow:auto;*/
+  /*display:table;
+	padding: 0 30px;
+    box-sizing: border-box;
+    
+    perspective: 3000px;*/
+}
+/*---------------------------------------------------------------------------------------
+　top    
+---------------------------------------------------------------------------------------*/
+.row {
+  margin-top: 0px
+}
+.row:before, .row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.col {
+  margin-top: 70px;
+}
+.mainArea01 {}
+.mainArea01 h1 {
+  margin: 20px 0;
+  font-size: 3.0rem;
+  font-weight: bold;
+  color: #FFE100;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 55px;
+  text-align: center;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+/*.active {
+  transform: translate(300px);
+  background: #ff0000;
+}*/
+.mainArea02 {
+  background-color: #E30480;
+}
+.mainArea02 h1 {
+  margin: -3px 0;
+  font-size: 3.0rem;
+  font-weight: bold;
+  color: #FFE100;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 55px;
+  text-align: center;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+.mainArea02 h2 {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 0px 0 0px;
+  color: #FFE100;
+  line-height: 1.5em;
+  text-align: center;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+h2 {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 0px 0 0px;
+  color: #FFE100;
+  line-height: 1.5em;
+  text-align: center;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+h3 {
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0px 0 0px;
+  text-align: center;
+  color: #FFE100;
+  line-height: 1.5em;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+/*---------------------------------------------------------------------------------------
+　main video
+---------------------------------------------------------------------------------------*/
+#main-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+#main-bg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.2) url("../images/bg_dot.png") repeat 0 0;
+  background-size: 2px 2px;
+}
+#main-bg video {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+}
+/*---------------------------------------------------------------------------------------
+　main
+---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------
+　footer    
+---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------
+other
+---------------------------------------------------------------------------------------*/
+/*吹き出し型の枠*/
+.balloon1 {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0;
+  padding: 12px 10px;
+  min-width: 100px;
+  max-width: 65%;
+  color: #E30480;
+  font-siz: 16px;
+  background: #FFE100;
+  border: solid 6px #fff;
+  border-radius: 30px;
+}
+.balloon1 p {
+  margin: 0;
+  padding: 0 3px 10px 0;
+}
+.balloon2 {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0;
+  padding: 12px 12px;
+  min-width: 100px;
+  max-width: 65%;
+  color: #FFE100;
+  font-siz: 16px;
+  background: #E30480;
+  border: solid 6px #fff;
+  border-radius: 30px;
+}
+.balloon2 p {
+  margin: 0;
+  padding: 0 3px 10px 0;
+}
+
+/*「ページトップへ」ボタン*/
+#page-top {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: -15px;
+  /*font-size: 85%;*/
+}
+#page-top img {
+  width: 50%;
+}
+.pc {
+  display: block;
+}
+.sp {
+  display: none;
+}
+/*レスポンシブ設定*/
+/*スマホ用*/
+@media screen and (max-width: 479px) {
+  #top {
+    padding-top: 90px;
+    height: 700px;
+  }
+  #web {
+    padding-top: 90px;
+  }
+  #lineStamp {
+    padding-top: 90px;
+  }
+  #game {
+    padding-top: 90px;
+  }
+  #other {
+    padding-top: 90px;
+  }
+  .game_mt {
+    margin-top: 100px;
+  }
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
+  #main-bg video {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  #top {
+    padding-top: 28vh;
+    height: 1000px;
+  }
+  #web {
+    padding-top: 130px;
+  }
+  #lineStamp {
+    padding-top: 130px;
+  }
+  #game {
+    padding-top: 130px;
+  }
+  #other {
+    padding-top: 130px;
+  }
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
+  .col-md-half {
+    width: 50%;
+    float: left;
+    /*margin-top: 70px;*/
+  }
+  .col-md-half02 {
+    width: 50%;
+    float: left;
+    /*margin-top: 70px;*/
+  }
+  #page-top {
+    font-size: 45%;
+  }
+  .row {
+    margin-top: 0px;
+  }
+  .game_mt {
+    margin-top: 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
+  .game_mt {
+    margin-top: 100px;
+  }
+  .row {
+    margin-top: 70px;
+    text-align: center;
+  }
+  .col-md-half {
+    width: 25%;
+    float: left;
+    margin-top: 0px;
+  }
+  .col-md-half02 {
+    width: 50%;
+    float: left;
+    margin-top: 0px;
+  }
+  #page-top {
+    font-size: 50%;
+  }
+  /*吹き出し型の枠*/
+  .balloon1 {
+    max-width: 60%;
+  }
+}
+/*デスクトップ用*/
+@media screen and (min-width: 1024px) {
+  #top {
+    padding-top: 28vh;
+    height: 1000px;
+  }
+  .game_mt {
+    margin-top: 100px;
+  }
+  .col-md-half {
+    width: 25%;
+    float: left;
+    margin-top: 0px;
+  }
+  .col-md-half02 {
+    width: 50%;
+    float: left;
+    margin-top: 0px;
+  }
+  .pc {
+    display: block;
+  }
+  .sp {
+    display: none;
+  }
+  .game_mt {
+    margin-top: 100px;
+  }
+  .col {
+    padding: 0px -10px 14px;
+  }
+  .col img {
+    width: 100%;
+    height: auto;
+  }
+  .row {
+    margin-top: 0px;
+    text-align: center;
+  }
+  #page-top {
+    bottom: 10px;
+    right: 10px;
+    /*font-size: 85%;*/
+  }
+  #page-top img {
+    width: 100%;
+  }
+  #menuIcon {
+    display: none;
+  }
+  body {
+    font-size: 22px;
+    /*line-height:18px;
+		line-height:33px;*/
+  }
+  .menu-wrap-lg {
+    display: block;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 1.00);
+    font-family: 'Open Sans', sans-serif;
+    transition: .3s;
+  }
+  .menu {
+    list-style-type: none;
+    max-width: 960px;
+    margin: 0px auto 0px;
+    padding: 0;
+  }
+  .menu li {
+    width: 20%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .menu .line01 {
+    display: block;
+    width: 100%;
+    padding: 26px 0;
+    color: black;
+    font-size: 24px;
+    font-weight: 550;
+    line-height: 1;
+    text-decoration: none;
+    transition: .3s;
+  }
+  .menu .line02 {
+    display: block;
+    width: 100%;
+    padding: 14px 0 14px;
+    color: black;
+    font-size: 24px;
+    font-weight: 550;
+    line-height: 1;
+    text-decoration: none;
+    transition: .3s;
+  }
+  .menu li a:hover {
+    background: rgba(0, 0, 0, .3);
+  }
+}
+@media print {
+  body {
+    display: none;
+  }
+}
