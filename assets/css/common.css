@@ -287,18 +287,7 @@ a:hover {
 .col {
   margin-top: 70px;
 }
-.mainArea01 {}
-.mainArea01 h1 {
-  margin: 20px 0;
-  font-size: 3.0rem;
-  font-weight: bold;
-  color: #FFE100;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  line-height: 55px;
-  text-align: center;
-  -webkit-font-smoothing: subpixel-antialiased;
-}
+
 /*.active {
   transform: translate(300px);
   background: #ff0000;
@@ -306,8 +295,8 @@ a:hover {
 .mainArea02 {
   background-color: #E30480;
 }
-.mainArea02 h1 {
-  margin: -3px 0;
+h1 {
+  margin: 10px 0;
   font-size: 3.0rem;
   font-weight: bold;
   color: #FFE100;
@@ -316,25 +305,24 @@ a:hover {
   line-height: 55px;
   text-align: center;
   -webkit-font-smoothing: subpixel-antialiased;
-}
-.mainArea02 h2 {
-  font-weight: bold;
-  font-size: 1.3em;
-  margin: 0px 0 0px;
-  color: #FFE100;
-  line-height: 1.5em;
-  text-align: center;
-  -webkit-font-smoothing: subpixel-antialiased;
+
+    text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000, -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000, -1px -1px 1px #000, 5px 5px #000;
+    /*transform: rotate(-4deg);*/
+
 }
 h2 {
   font-weight: bold;
   font-size: 1.3em;
-  margin: 0px 0 0px;
+  margin: 10px 0 0px;
   color: #FFE100;
   line-height: 1.5em;
   text-align: center;
   -webkit-font-smoothing: subpixel-antialiased;
+	
+	    text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000, -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000, -1px -1px 1px #000, 4px 4px #000;
+    
 }
+
 h3 {
   font-weight: bold;
   font-size: 1em;
