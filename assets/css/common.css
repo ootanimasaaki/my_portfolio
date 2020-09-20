@@ -71,21 +71,21 @@ body.preload .wow.bounceInDown {
 /*メニュー*/
 /*PCナビゲーションアニメ*/
 header .menu li:nth-child(1) {
-  animation-delay: 1.0s;
+  animation-delay: 0.0s;
   /*padding-top: 8px;*/
 }
 header .menu li:nth-child(2) {
-  animation-delay: 1.15s;
+  animation-delay: 0.15s;
   /*padding-top: 8px;*/
 }
 header .menu li:nth-child(3) {
-  animation-delay: 1.30s;
+  animation-delay: 0.30s;
 }
 header .menu li:nth-child(4) {
-  animation-delay: 1.45s;
+  animation-delay: 0.45s;
 }
 header .menu li:nth-child(5) {
-  animation-delay: 1.60s;
+  animation-delay: 0.60s;
 }
 /*SPナビゲーションアニメ*/
 header #menuWaku li:nth-child(1) {
@@ -255,12 +255,11 @@ a:hover {
 }
 #wrap {
   overflow-x: hidden;
-
 }
 /*---------------------------------------------------------------------------------------
 　common 
 ---------------------------------------------------------------------------------------*/
-#wrap {
+#wrapper {
   /*max-width:1070px;*/
   width: 100%;
   height: 100%;
@@ -271,30 +270,6 @@ a:hover {
     box-sizing: border-box;
     
     perspective: 3000px;*/
-}
-
-#loader-bg {
-  display: none;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  background: #000;
-  z-index: 9999;
-}
-#loader {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 200px;
-  height: 200px;
-  margin-top: -100px;
-  margin-left: -100px;
-  text-align: center;
-  color: #fff;
-  z-index: 2;
 }
 /*---------------------------------------------------------------------------------------
 　top    
@@ -626,7 +601,7 @@ other
   .menu-wrap-lg {
     display: block;
     position: fixed;
-    z-index: 5;
+    z-index: 999;
     top: 0;
     left: 0;
     width: 100%;
