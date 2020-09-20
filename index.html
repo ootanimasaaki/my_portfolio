@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="ja">
 <head>
 <meta charset="utf-8">
 <title>大谷のポートフォリオ</title>
@@ -40,12 +40,56 @@
 <script>
 	new WOW().init();
 </script> 
+	
+	
+		<script>
+$(function() {
+	document.body.scrollTop = document.documentElement.scrollTop = 0;
+});
+</script> 
+	
 <script>
 $(window).load(function() {
   $("body").removeClass("preload");
 });
 </script> 
+	
+<script>
+$(function() {
+  var h = $(window).height();
+  
+  $('#wrap').css('display','none');
+  $('#loader-bg ,#loader').height(h).css('display','block');
+});
+  
+$(window).load(function () { //全ての読み込みが完了したら実行
+  $('#loader-bg').delay(900).fadeOut(800);
+  $('#loader').delay(600).fadeOut(300);
+  $('#wrap').css('display', 'block');
+});
+  
+//10秒たったら強制的にロード画面を非表示
+$(function(){
+  setTimeout('stopload()',10000);
+});
+  
+function stopload(){
+  $('#wrap').css('display','block');
+  $('#loader-bg').delay(900).fadeOut(800);
+  $('#loader').delay(600).fadeOut(300);
+}
+</script>
+	
+	
+	
 
+
+	
+
+
+	
+	
+	
 <!-- スムーズスクロール部分の記述 --> 
 <script>
 $(function(){
@@ -65,12 +109,6 @@ $(function(){
    });
 });
 </script> 
-	
-<script>
-$(function() {
-	document.body.scrollTop = document.documentElement.scrollTop = 0;
-});
-</script> 
 
 <!-- Global site tag (gtag.js) - Google Analytics --> 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177766883-1"></script> 
@@ -83,8 +121,15 @@ $(function() {
 </script>
 </head>
 
-<body id="wrap" class="preload">
-<div id="wrapper"> 
+<body class="preload">
+<div id="loader-bg">
+  <div id="loader">
+    <img src="assets/images/loadingicon.gif" width="80" height="80" alt="Now Loading..." />
+    <p>Now Loading...</p>
+  </div>
+</div>
+	
+<div id="wrap"> 
   
   <!--============================
 	         MENU
@@ -119,8 +164,8 @@ $(function() {
   <!----+++ main visual +++---->
   <main>
     <section id="top" class="mainArea01">
-      <div class="animated zoomInDown" id="anidelay01" data-wow-delay="0.6s"> <img src="assets/images/ch_01_1.png" alt="キャラクター画像1"> </div>
-      <h1 class="animated zoomInDown" id="anidelay02" data-wow-delay="0.8s">ようこそ！</h1>
+      <div class="animated zoomInDown" id="anidelay01" data-wow-delay="1.6s"> <img src="assets/images/ch_01_1.png" alt="キャラクター画像1"> </div>
+      <h1 class="animated zoomInDown" id="anidelay02" data-wow-delay="1.8s">ようこそ！</h1>
       <h2 class="wow zoomInDown " data-wow-delay="1.0s">大谷のポートフォリオへ！<br>
         よろしくお願いします。</h2>
     </section>
