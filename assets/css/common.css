@@ -10,7 +10,7 @@ body {
   height: 100%;
   position: relative;
   line-height: 1;
-  font-family:'Open Sans', sans-serif;
+  font-family: sans-serif;
   background: #000;
   font-size: 14px;
   text-align: center;
@@ -139,6 +139,7 @@ ul li {
   background: #FFFFFF;
 }
 #menuIcon #text_menu {
+ font-family: sans-serif;
   font-weight: 700;
   color: black;
   font-size: 40px;
