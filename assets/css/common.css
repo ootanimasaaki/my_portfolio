@@ -321,49 +321,11 @@ h3 {
   line-height: 1.5em;
   -webkit-font-smoothing: subpixel-antialiased;
 }
-/*---------------------------------------------------------------------------------------
-　main video
----------------------------------------------------------------------------------------*/
-#main-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: -1;
-  overflow: hidden;
-}
-#main-bg:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.2) url("../images/bg_dot.png") repeat 0 0;
-  background-size: 2px 2px;
-}
-#main-bg video {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  transform: translate(-50%, -50%);
-}
+
 /*---------------------------------------------------------------------------------------
 　main
 ---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------
-　footer    
----------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------
-other
----------------------------------------------------------------------------------------*/
+
 /*吹き出し型の枠*/
 .balloon1 {
   position: relative;
@@ -403,6 +365,62 @@ other
   margin: 0;
   padding: 0 3px 10px 0;
 }
+/*---------------------------------------------------------------------------------------
+　main video
+---------------------------------------------------------------------------------------*/
+#main-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+#main-bg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.2) url("../images/bg_dot.png") repeat 0 0;
+  background-size: 2px 2px;
+}
+#main-bg video {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+}
+
+/*---------------------------------------------------------------------------------------
+　footer    
+---------------------------------------------------------------------------------------*/
+footer p{
+  text-align: center;
+  font-size: 14px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  color: white;
+}
+.footerArea {
+  background-color: #E30480;
+  background-image: url("../images/bg_dot.png");
+
+}
+
+
+/*---------------------------------------------------------------------------------------
+other
+---------------------------------------------------------------------------------------*/
+
 /*「ページトップへ」ボタン*/
 #page-top {
   display: none;
@@ -420,8 +438,10 @@ other
 .sp {
   display: none;
 }
-/*レスポンシブ設定*/
-/*スマホ用*/
+/*---------------------------------------------------------------------------------------
+レスポンシブ設定
+スマホ用
+---------------------------------------------------------------------------------------*/
 @media screen and (max-width: 479px) {
   #top {
     padding-top: 90px;
