@@ -1,4 +1,8 @@
 @charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
 
 html {
   width: 100%;
@@ -6,6 +10,7 @@ html {
 	transform-origin: 50%;*/
 }
 body {
+  margin: 0px;
   width: 100%;
   height: 100%;
   position: relative;
@@ -134,23 +139,28 @@ ul li {
   z-index: 5;
 }
 #menuIcon {
-  position: relative;
+ position: relative;
   height: 54px;
   background: #FFFFFF;
 }
 #menuIcon #text_menu {
- font-family: sans-serif;
-  font-weight: 700;
-  color: black;
-  font-size: 40px;
   position: absolute;
-  top: -3px;
+  font-weight: bold;
+  color: #333;
+  font-size: 40px;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  margin: auto; /*上下左右中央に*/
-  width: 100%;
-  height: 80%;
+  margin: auto;
+  width: 80%;
+  height: 2.2rem;
+	
+
+	
+
+	
+
 }
 #menuIcon a {
   position: absolute;
@@ -191,7 +201,7 @@ ul li {
   display: block;
   position: absolute;
   width: 36px;
-  border-bottom: solid 6px #000;
+  border-bottom: solid 6px #333;
   -webkit-transition: .35s ease-in-out; /*変化の速度を指定*/
   -moz-transition: .35s ease-in-out; /*変化の速度を指定*/
   transition: .35s ease-in-out; /*変化の速度を指定*/
@@ -235,10 +245,12 @@ li {
 li a {
   display: block;
   color: white;
+padding-top: 5px;
 }
 a {
   text-decoration: none;
   font-weight: 500;
+
   -webkit-transition: color .25s ease;
   -moz-transition: color .25s ease;
   -o-transition: color .25s ease;
@@ -605,12 +617,11 @@ other
   .menu-wrap-lg {
     display: block;
     position: fixed;
-    z-index: 999;
+    z-index: 3;
     top: 0;
     left: 0;
     width: 100%;
     background: rgba(255, 255, 255, 1.00);
-    font-family: 'Open Sans', sans-serif;
     transition: .3s;
   }
   .menu {
@@ -630,7 +641,7 @@ other
     display: block;
     width: 100%;
     padding: 26px 0;
-    color: black;
+    color: #333;
     font-size: 24px;
     font-weight: 550;
     line-height: 1;
@@ -641,7 +652,7 @@ other
     display: block;
     width: 100%;
     padding: 14px 0 14px;
-    color: black;
+    color: #333;
     font-size: 24px;
     font-weight: 550;
     line-height: 1;
