@@ -29,14 +29,17 @@
 <meta name="twitter:url" content="http://oomasamasa.html.xdomain.jp/">
 <meta name="twitter:description" content="大谷が制作したポートフォリオです。">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+
 <link rel="stylesheet" href="assets/css/animate.css" type="text/css" />
 <link rel="stylesheet" href="assets/css/shine.css">
 <link rel="stylesheet" href="assets/css/common.css?ver=2" type="text/css" />
+	<link rel="stylesheet" href="assets/css/lightcase.min.css">
+	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
 <script src="assets/js/wow.min.js"></script> 
 <script src="assets/js/common.js"></script><!--メニュー--> 
 <script src="assets/js/top.js"></script> 
+	<script src="assets/js/lightcase.js"></script>
 <script>
 	new WOW().init();
 </script> 
@@ -70,7 +73,18 @@ $(function(){
 $(function() {
 	document.body.scrollTop = document.documentElement.scrollTop = 0;
 });
-</script> 
+</script>
+	
+	<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('a[data-rel^=lightcase]').lightcase({
+	transition: 'fade',
+	showSequenceInfo: false,
+	showCaption: false
+}
+		);
+	});
+</script>
 
 <!-- Global site tag (gtag.js) - Google Analytics --> 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177766883-1"></script> 
@@ -101,11 +115,13 @@ $(function() {
           <li> <a href="#other" class="line01">その他</a> </li>
         </ul>
       </nav>
-      <div id="menuIcon"> <a href="javascript:void(0);"> 
+      <div id="menuIcon">
+		<a href="javascript:void(0);"> 
         <!-- ハンバーガーメニュー部分 -->
         <div class="Toggle"> <span></span> <span></span> <span></span> </div>
         <div id="text_menu">MENU</div>
-        </a> </div>
+        </a>
+	  </div>
       <ul id="menuWaku">
         <li id="menu1" class="menu"> <a href="#top">TOP</a> </li>
         <li id="menu2" class="menu"> <a href="#web">WEB</a> </li>
@@ -258,8 +274,23 @@ $(function() {
       <h1 class="wow bounceInLeft" data-wow-delay="0.2s" data-wow-offset="0">ここは<br>
         その他だよ!</h1>
       <h2 class="wow bounceInLeft " data-wow-delay="0.4s" data-wow-offset="0" style="margin-top: 30px;">☆シネマグラフ☆</h2>
+		
+		
+		
+		<section id="modalArea" class="modalArea">
+  <div id="modalBg" class="modalBg"></div>
+  <div class="modalWrapper">
+    <div class="modalContents">
+
+    </div>
+    <div id="closeModal" class="closeModal">
+      ×
+    </div>
+  </div>
+</section>
       
       <!--シネマグラフ-->
+
       <div class="row">
         <div class="col col-md-half">
           <div class="wow bounceInLeft" data-wow-delay="0.8s" data-wow-offset="0">
