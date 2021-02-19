@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <section style="text-align: center;">
+  <div style="margin: 2px, auto;">
+    <div id="app">
+      <div class="container">
+        <div id="chart_div"></div>
+        <ul class="controls">
+          <li v-for="(item, c) in dataArray" v-if="c > 0" class="products">{{item[0]}}<br>:{{item[1]}}個
+          <div id="btn" v-on:click="addOne(c)">&#043;</div>
+          <div id="btn" v-on:click="deleteOne(c)">&#045;</div>
+          </li>
+        </ul>
+    </div>
+  </div>
+
+</section>
+
+
+
+  <!-- CDNの読み込む順番に注意 -->
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <script src="js/main.js"></script>
+  
+</body>
+</html>

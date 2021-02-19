@@ -1,0 +1,146 @@
+/* common */
+/* small screen */
+
+
+#chart_div{
+text-align: center;
+    width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+
+li.products {
+  width: 140px;
+}
+
+#chart_div {
+  height: 500px;
+  width: 600px;
+}
+
+.container {
+  background: #fff;
+  text-align: center;
+  border-radius: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul.controls {
+  width: 722px;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#btn {
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  background: #ddd;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 0 #ccc;
+  margin: 20px auto;
+  user-select: none;
+}
+
+#btn:hover {
+  background: #bbb;
+  box-shadow: 0 4px 0 #aaa;
+}
+
+
+.products {
+  font-weight: bold;
+  margin: 12px auto;
+}
+
+/* medium screen*/
+/* @media (min-width: 600px) {
+
+  #chart_div {
+    height: 600px;
+    width: 600px;
+  }
+} */
+
+/* large screen*/
+@media (min-width: 1025px) {
+
+  body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+  }
+  
+  #chart_div {
+
+    height: 500px;
+    width: 1500px;
+  }
+ 
+  ul.controls {
+    width: 820px;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .container {
+    margin: 20px auto;
+    width: 1000px;
+    background: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  li.products {
+    width: 160px;
+  }
+  
+  #btn {
+    font-size: 24px;
+    width: 80px;
+    height: 40px;
+    line-height: 45px;
+    background: #ddd;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 0 #ccc;
+    margin: 10px auto;
+    user-select: none;
+  }
+  
+  #btn.disabled {
+    background: #ccc;
+    box-shadow: 0 4px 0 #bbb;
+    opacity: 0.7;
+  }
+  
+  #btn:hover {
+    background: #bbb;
+    box-shadow: 0 4px 0 #aaa;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .products {
+    font-weight: bold;
+    margin: 8px auto;
+  }
+
+}
