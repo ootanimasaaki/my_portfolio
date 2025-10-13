@@ -6,9 +6,9 @@ body {
   background-color: #f4f4f9;
 }
 
-/* 繝倥ャ繝繝ｼ */
+/* header */
 header {
-  background-color: #00B900;
+  background-color: #e421eb;
   color: white;
   padding: 20px;
   text-align: center;
@@ -30,7 +30,7 @@ header h1 {
   margin-bottom: 10px;
 }
 
-/* GPS讀懃ｴ｢繝懊ち繝ｳ */
+/* GPSボタン */
 .gps-search-btn {
   display: block;
   margin: 20px auto;
@@ -75,7 +75,7 @@ header h1 {
   100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
-/* 讀懃ｴ｢邨先棡繝�く繧ｹ繝医�繧ｹ繧ｿ繧､繝ｫ */
+/* 文章 */
 .search-result-text {
   text-align: center;
   margin-bottom: 10px;
@@ -85,17 +85,17 @@ header h1 {
 
 .search-result-text .highlight {
   font-weight: bold;
-  color: #ff0000; /* 驕ｩ蛻�↑濶ｲ縺ｫ鄂ｮ縺肴鋤縺医※縺上□縺輔＞ */
+  color: #ff0000; /* 文章赤色 */
 }
 
-/* 繝励Ο繝輔ぅ繝ｼ繝ｫ逕ｻ蜒上さ繝ｳ繝�リ */
+/* 文章 */
 .profile-images-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, auto);
   gap: 10px;
   padding: 0 20px;
-  margin-bottom: 20px; /* 繝励Ο繝輔ぅ繝ｼ繝ｫ逕ｻ蜒上さ繝ｳ繝�リ縺ｮ荳九↓菴咏區繧定ｿｽ蜉� */
+  margin-bottom: 20px; /* 文章 */
 }
 
 @media (max-width: 768px) {
@@ -110,7 +110,7 @@ header h1 {
   }
 }
 
-/* 繝励Ο繝輔ぅ繝ｼ繝ｫ逕ｻ蜒� */
+/* プロフィール */
 .profile-container {
   position: relative;
   display: flex;
@@ -144,11 +144,11 @@ header h1 {
   color: #666;
 }
 
-/* 繝輔ャ繧ｿ繝ｼ */
+/* フッター */
 .footer {
   display: flex;
   justify-content: center;
   padding: 20px;
-  background-color: #00B900;
+  background-color: #e421eb;
   color: white;
 }
