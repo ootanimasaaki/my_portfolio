@@ -24,6 +24,7 @@ header h1 {
 .search-box {
   text-align: center;
   margin: 20px;
+  border: dashed 2px #ff6699;
 }
 
 .search-box p {
