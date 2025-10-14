@@ -8,10 +8,11 @@ body {
 
 /* header */
 header {
-  background-color: #e421eb;
+  background-color: #ff6699;
   color: white;
   padding: 20px;
   text-align: center;
+  box-shadow: 0 2px 5px #ffcc00;
 }
 
 header h1 {
@@ -85,7 +86,8 @@ header h1 {
 
 .search-result-text .highlight {
   font-weight: bold;
-  color: #ff0000; /* 文章赤色 */
+   color: #ff6699; /* 文章赤色 */
+  /*color: #ff0000;*/
 }
 
 /* プロフィール並び方 */
@@ -149,6 +151,6 @@ header h1 {
   display: flex;
   justify-content: center;
   padding: 20px;
-  background-color: #e421eb;
+  background-color: ff6699;
   color: white;
 }
