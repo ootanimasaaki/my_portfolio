@@ -1,0 +1,157 @@
+/* スタイル */
+body {
+  font-family: 'Arial', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif; /* 初期設定 */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+/* header */
+header {
+  background-color: #ff6699;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-bottom: solid 10px #ffcc00;
+  border-top: solid 10px #ffcc00;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.search-box {
+  text-align: center;
+  margin: 20px;
+}
+
+.search-box p {
+  font-size: 16px;
+  color: #555;
+  margin: 20px;
+}
+
+/* GPSボタン */
+.gps-search-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #6bb2ec;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.gps-search-btn:hover {
+  background-color: #3493e0;
+}
+
+/* Loading spinner */
+.gps-search-btn.loading::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-top: 2px solid #a9ceec;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gps-search-btn.loading {
+  color: transparent;
+  pointer-events: none;
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* 文章 */
+.search-result-text {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.search-result-text .highlight {
+  font-weight: bold;
+   color: #ff6699; /* 文章赤色 */
+  /*color: #ff0000;*/
+}
+
+/* プロフィール並び方 */
+.profile-images-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
+  padding: 0 20px;
+  margin-bottom: 20px; /* 間隔 */
+}
+
+@media (max-width: 768px) {
+  .profile-images-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-images-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* プロフィール */
+.profile-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  padding: 10px;
+}
+
+.profile-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-container h3 {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.profile-container p {
+  margin: 5px 0;
+  font-size: 12px;
+  color: #666;
+}
+
+/* フッター */
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: ff6699;
+  color: white;
+}
