@@ -55,8 +55,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 500); // フェードアウト後、0.5秒後に削除
     }
 
-    // ユーザーカードを生成する関数
-// ユーザーカードを生成する関数
 // ユーザーカードを生成する関数
 function createUserCard(user, index) {
     const userCard = document.createElement('div');
@@ -93,8 +91,8 @@ function createUserCard(user, index) {
     const talkButton = document.createElement('a');
     talkButton.classList.add('talk-button');
     talkButton.textContent = '💬トークする';
-    //talkButton.href = 'http://piasukai.xyz/line/ch/friends-info/';
-    talkButton.href = 'ここにURL/friends-info/';
+    //talkButton.href = 'https://39iimono.jp/lp/rich/friends-info';
+    talkButton.href = 'https://39iimono.jp/lp/rich/friends-info/friends-info/';
     userInfoSide.appendChild(timeAgo);
     userInfoSide.appendChild(talkButton);
 
