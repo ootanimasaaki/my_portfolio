@@ -1,26 +1,24 @@
-/* styles.css */
-
-/* 全体のスタイル */
+/* スタイル */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif; /* 初期設定 */
   margin: 0;
   padding: 0;
-  background-color: #f2f2f2;
+  background-color: #f4f4f9;
 }
 
-/* ヘッダーのスタイル */
+/* header */
 header {
   background-color: #ff6699;
-    color: white;
-    padding: 5px;
-    text-align: center;
-    border-bottom: solid 10px #ffcc00;
-    border-top: solid 10px #ffcc00;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-bottom: solid 10px #ffcc00;
+  border-top: solid 10px #ffcc00;
 }
 
-h1 {
-  color: white;
-  margin-bottom: 10px;
+header h1 {
+  margin: 0;
+  font-size: 24px;
 }
 
 /* サブタイトルとテキストのスタイル */
