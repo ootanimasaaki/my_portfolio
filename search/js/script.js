@@ -1,5 +1,5 @@
 // 詳細ページのURL
-const DETAILS_PAGE_URL = 'https://39iimono.jp/lp/rich/friends-info/';
+const DETAILS_PAGE_URL = 'https://39iimono.jp/lp/rich/ここに任意のフォルダ名/';
 // URLを生成する関数
 function generateUrl(imgSrc) {
   return `${DETAILS_PAGE_URL}?src=${imgSrc}`;
@@ -16,4 +16,5 @@ function handleBannerClick(event) {
 // バナーリンクにイベントリスナーを設定
 const bannerLinks = document.querySelectorAll('.banner-link');
 bannerLinks.forEach(link => link.addEventListener('click', handleBannerClick));
+
 
